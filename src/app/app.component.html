@@ -1,0 +1,13 @@
+<button (click)="checkAuth()">Check Auth</button>
+<div>
+  <p><strong>Is Authenticated:&nbsp;</strong>{{auth.isAuthenticated}}</p>
+  <p><strong>User Data:&nbsp;</strong>{{auth.userData | json}}</p>
+  <p><strong>Access Token:&nbsp;</strong>{{auth.accessToken}}</p>
+  <p><strong>ID Token:&nbsp;</strong>{{auth.idToken}}</p>
+</div>
+
+<button (click)="login()">Init Auth</button>
+
+<button (click)="getUserInfo()">Get User Info</button>
+
+{{userInfo | json}}
