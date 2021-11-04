@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  stsAuthority: 'https://id.twitch.tv/oauth2',
+  clientId: '',
+  clientRoot: 'http://localhost:4200/',
+  clientScope: 'openid user:read:email user:read:follows user:read:subscriptions',
+  apiRoot: 'https://id.twitch.tv/oauth2',
 };
 
 /*

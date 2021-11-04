@@ -1,0 +1,20 @@
+<div>
+    <h4>{{currentUser?.profile?.preferred_username}}</h4>
+    <table>
+        <caption>User Profile</caption>
+        <thead>
+            <tr>
+                <th id="#">#</th>
+                <th id="channel">Channel</th>
+                <th id="followedAt">Followed At</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let follow of follows?.data; index as i">
+                <td>{{i+1}}</td>
+                <td>{{follow.to_name}}</td>
+                <td>{{follow.followed_at}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,3 +1,8 @@
 export const environment = {
-  production: true
+  production: true,
+  stsAuthority: '',
+  clientId: '',
+  clientRoot: '',
+  clientScope: '',
+  apiRoot: '',
 };
